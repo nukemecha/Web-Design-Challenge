@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lattitude</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="topnav.css">
+</head>
+
+<body>
+
+    <div class="container slate">
+        
+        <!-- Header -->
+        <div class="row head_marge_pad">
+
+            <div class="col-md-12 white_font">
+                <h1><b>Lattitude</b></h1>
+                <h6>Weather analysis with an attitude</h6>
+            </div>
+            
+        </div>
+
+        <!-- Nav Bar -->
+
+        <div class="row">
+        
+            <div class="col-md-12">
+                                       
+                <div class="topnav" id="myTopnav">
+                  <a href="index.html">Home</a>
+                  <div class="drop">
+                    <button class="dropbtn">Visualizations
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-content">
+                      <a href="viz1.html">Viz 1</a>
+                      <a href="viz2.html">Viz 2</a>
+                      <a href="viz3.html">Viz 3</a>
+                      <a href="#" class="active">Viz 4</a>
+                    </div>
+                  </div>
+                  <a href="compare.html">Comparisons</a>
+                  <a href="data.html">Data</a>
+                  
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- Content -->
+
+        <div class="row gray cont_marge_pad">
+            <div class="col-md-12">
+                Test
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="row foot">
+            
+            <div class="col-md-3 white_font">
+                2020 Tosh Murchison<br>
+                Dallas, TX 75219<br>
+                fourspaceman@gmail.com
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- script dependencies -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+</body>
+</html>
