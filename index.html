@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lattitude</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="topnav.css">
+    <link rel="stylesheet" href="style.css">    
 </head>
 
 <body>
@@ -17,40 +16,45 @@
         <div class="row head_marge_pad">
 
             <div class="col-md-12 white_font">
-                <h1><b>Lattitude</b></h1>
-                <h6>Weather analysis with an attitude</h6>
+                <h3><b>Weather Analysis</b></h3>
             </div>
             
         </div>
 
         <!-- Nav Bar -->
 
-        <div class="row">
         
-            <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Lattitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="temps.html">Maximum Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="winds.html">Wind Speed</a>
+                    <a class="dropdown-item" href="clouds.html">Cloudiness</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="compare.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
                 
-                    <div class="topnav" id="myTopnav">
-                        <a href="#" class="active">Home</a>
-                        <div class="drop">
-                          <button class="dropbtn">Visualizations
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-                          <div class="drop-content">
-                            <a href="viz1.html">Viz 1</a>
-                            <a href="viz2.html">Viz 2</a>
-                            <a href="viz3.html">Viz 3</a>
-                            <a href="viz4.html">Viz 4</a>
-                          </div>
-                        </div>
-                        <a href="compare.html">Comparisons</a>
-                        <a href="data.html">Data</a>
-                        
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-                    </div>
-                
+              </ul>
+              
             </div>
-            
-        </div>
+        </nav>
+
 
         <!-- Content -->
 
@@ -92,18 +96,12 @@
         </div>
 
     </div>
+    
+    <!-- bootstrap external script dependencies -->
 
-    <!-- script dependencies -->
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
