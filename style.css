@@ -1,0 +1,35 @@
+/* font colors */
+/***************/
+
+.white_font {
+    color: #fbfbff
+}
+
+/* bg colors */
+/*************/
+
+.slate {
+    background: #040f16;
+}
+
+.gray {
+    background: #ced3dc;
+}
+
+/* formatting */
+/**************/
+
+.head_marge_pad {
+    padding: 20px;
+}
+
+.cont_marge_pad {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.foot {
+    padding: 20px;
+    font-size: small;
+}
